@@ -1,0 +1,826 @@
+|--- sex_ Male <= 0.50
+|   |--- age <= 29.50
+|   |   |--- relationship_ Wife <= 0.50
+|   |   |   |--- education_ Bachelors <= 0.50
+|   |   |   |   |--- education_ Prof-school <= 0.50
+|   |   |   |   |   |--- marital_status_ Divorced <= 0.50
+|   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |--- marital_status_ Divorced >  0.50
+|   |   |   |   |   |   |--- occupation_ Exec-managerial <= 0.50
+|   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |--- occupation_ Exec-managerial >  0.50
+|   |   |   |   |   |   |   |--- hours_per_week <= 42.50
+|   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |--- hours_per_week >  42.50
+|   |   |   |   |   |   |   |   |--- hours_per_week <= 47.50
+|   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |--- hours_per_week >  47.50
+|   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |--- education_ Prof-school >  0.50
+|   |   |   |   |   |--- marital_status_ Divorced <= 0.50
+|   |   |   |   |   |   |--- hours_per_week <= 60.00
+|   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |--- hours_per_week >  60.00
+|   |   |   |   |   |   |   |--- fnlwgt <= 124540.00
+|   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |--- fnlwgt >  124540.00
+|   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |--- marital_status_ Divorced >  0.50
+|   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |--- education_ Bachelors >  0.50
+|   |   |   |   |--- occupation_ Tech-support <= 0.50
+|   |   |   |   |   |--- age <= 24.50
+|   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |--- age >  24.50
+|   |   |   |   |   |   |--- occupation_ Exec-managerial <= 0.50
+|   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |--- occupation_ Exec-managerial >  0.50
+|   |   |   |   |   |   |   |--- relationship_ Own-child <= 0.50
+|   |   |   |   |   |   |   |   |--- native_country_ United-States <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |--- native_country_ United-States >  0.50
+|   |   |   |   |   |   |   |   |   |--- age <= 26.00
+|   |   |   |   |   |   |   |   |   |   |--- fnlwgt <= 206451.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |   |   |--- fnlwgt >  206451.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |--- age >  26.00
+|   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |--- relationship_ Own-child >  0.50
+|   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |--- occupation_ Tech-support >  0.50
+|   |   |   |   |   |--- class:  <=50K
+|   |   |--- relationship_ Wife >  0.50
+|   |   |   |--- hours_per_week <= 27.50
+|   |   |   |   |--- class:  <=50K
+|   |   |   |--- hours_per_week >  27.50
+|   |   |   |   |--- education_ Masters <= 0.50
+|   |   |   |   |   |--- hours_per_week <= 41.00
+|   |   |   |   |   |   |--- education_num <= 10.50
+|   |   |   |   |   |   |   |--- education_ HS-grad <= 0.50
+|   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |--- education_ HS-grad >  0.50
+|   |   |   |   |   |   |   |   |--- fnlwgt <= 79565.50
+|   |   |   |   |   |   |   |   |   |--- capital_gain <= 1317.50
+|   |   |   |   |   |   |   |   |   |   |--- age <= 21.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |   |--- age >  21.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- capital_gain >  1317.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |--- fnlwgt >  79565.50
+|   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |--- education_num >  10.50
+|   |   |   |   |   |   |   |--- occupation_ Adm-clerical <= 0.50
+|   |   |   |   |   |   |   |   |--- education_ Bachelors <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |--- education_ Bachelors >  0.50
+|   |   |   |   |   |   |   |   |   |--- age <= 24.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |--- age >  24.50
+|   |   |   |   |   |   |   |   |   |   |--- occupation_ Prof-specialty <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |   |   |--- occupation_ Prof-specialty >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |--- occupation_ Adm-clerical >  0.50
+|   |   |   |   |   |   |   |   |--- native_country_ India <= 0.50
+|   |   |   |   |   |   |   |   |   |--- fnlwgt <= 175038.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |--- fnlwgt >  175038.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |--- native_country_ India >  0.50
+|   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |--- hours_per_week >  41.00
+|   |   |   |   |   |   |--- education_num <= 12.50
+|   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |--- education_num >  12.50
+|   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |--- education_ Masters >  0.50
+|   |   |   |   |   |--- fnlwgt <= 186784.50
+|   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |--- fnlwgt >  186784.50
+|   |   |   |   |   |   |--- occupation_ Prof-specialty <= 0.50
+|   |   |   |   |   |   |   |--- fnlwgt <= 207322.00
+|   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |--- fnlwgt >  207322.00
+|   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |--- occupation_ Prof-specialty >  0.50
+|   |   |   |   |   |   |   |--- class:  <=50K
+|   |--- age >  29.50
+|   |   |--- occupation_ Prof-specialty <= 0.50
+|   |   |   |--- capital_gain <= 4243.50
+|   |   |   |   |--- education_num <= 12.50
+|   |   |   |   |   |--- marital_status_ Never-married <= 0.50
+|   |   |   |   |   |   |--- occupation_ Other-service <= 0.50
+|   |   |   |   |   |   |   |--- relationship_ Wife <= 0.50
+|   |   |   |   |   |   |   |   |--- occupation_ Adm-clerical <= 0.50
+|   |   |   |   |   |   |   |   |   |--- hours_per_week <= 67.50
+|   |   |   |   |   |   |   |   |   |   |--- occupation_ Tech-support <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- occupation_ Tech-support >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- hours_per_week >  67.50
+|   |   |   |   |   |   |   |   |   |   |--- race_ Asian-Pac-Islander <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- race_ Asian-Pac-Islander >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |--- occupation_ Adm-clerical >  0.50
+|   |   |   |   |   |   |   |   |   |--- workclass_ Local-gov <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- fnlwgt <= 22508.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- fnlwgt >  22508.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |   |--- workclass_ Local-gov >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |--- relationship_ Wife >  0.50
+|   |   |   |   |   |   |   |   |--- native_country_ Canada <= 0.50
+|   |   |   |   |   |   |   |   |   |--- occupation_ Sales <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- native_country_ Vietnam <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 20
+|   |   |   |   |   |   |   |   |   |   |--- native_country_ Vietnam >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |   |--- occupation_ Sales >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- age <= 45.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- age >  45.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |--- native_country_ Canada >  0.50
+|   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |--- occupation_ Other-service >  0.50
+|   |   |   |   |   |   |   |--- native_country_ Yugoslavia <= 0.50
+|   |   |   |   |   |   |   |   |--- marital_status_ Divorced <= 0.50
+|   |   |   |   |   |   |   |   |   |--- relationship_ Not-in-family <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- marital_status_ Married-spouse-absent <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 15
+|   |   |   |   |   |   |   |   |   |   |--- marital_status_ Married-spouse-absent >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- relationship_ Not-in-family >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |--- marital_status_ Divorced >  0.50
+|   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |--- native_country_ Yugoslavia >  0.50
+|   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |--- marital_status_ Never-married >  0.50
+|   |   |   |   |   |   |--- education_ Some-college <= 0.50
+|   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |--- education_ Some-college >  0.50
+|   |   |   |   |   |   |   |--- age <= 41.00
+|   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |--- age >  41.00
+|   |   |   |   |   |   |   |   |--- capital_loss <= 1222.00
+|   |   |   |   |   |   |   |   |   |--- relationship_ Not-in-family <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |--- relationship_ Not-in-family >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- fnlwgt <= 159278.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |   |--- fnlwgt >  159278.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |--- capital_loss >  1222.00
+|   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |--- education_num >  12.50
+|   |   |   |   |   |--- marital_status_ Married-civ-spouse <= 0.50
+|   |   |   |   |   |   |--- occupation_ Protective-serv <= 0.50
+|   |   |   |   |   |   |   |--- education_ Bachelors <= 0.50
+|   |   |   |   |   |   |   |   |--- age <= 40.50
+|   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |--- age >  40.50
+|   |   |   |   |   |   |   |   |   |--- hours_per_week <= 45.00
+|   |   |   |   |   |   |   |   |   |   |--- marital_status_ Divorced <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |   |--- marital_status_ Divorced >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |--- hours_per_week >  45.00
+|   |   |   |   |   |   |   |   |   |   |--- education_ Masters <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |   |   |--- education_ Masters >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |--- education_ Bachelors >  0.50
+|   |   |   |   |   |   |   |   |--- workclass_ State-gov <= 0.50
+|   |   |   |   |   |   |   |   |   |--- race_ Other <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- occupation_ Adm-clerical <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 11
+|   |   |   |   |   |   |   |   |   |   |--- occupation_ Adm-clerical >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |--- race_ Other >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |--- workclass_ State-gov >  0.50
+|   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |--- occupation_ Protective-serv >  0.50
+|   |   |   |   |   |   |   |--- workclass_ Federal-gov <= 0.50
+|   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |--- workclass_ Federal-gov >  0.50
+|   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |--- marital_status_ Married-civ-spouse >  0.50
+|   |   |   |   |   |   |--- hours_per_week <= 22.00
+|   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |--- hours_per_week >  22.00
+|   |   |   |   |   |   |   |--- native_country_ United-States <= 0.50
+|   |   |   |   |   |   |   |   |--- occupation_ Sales <= 0.50
+|   |   |   |   |   |   |   |   |   |--- relationship_ Other-relative <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- occupation_ Handlers-cleaners <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |   |--- occupation_ Handlers-cleaners >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |   |--- relationship_ Other-relative >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |--- occupation_ Sales >  0.50
+|   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |--- native_country_ United-States >  0.50
+|   |   |   |   |   |   |   |   |--- age <= 53.50
+|   |   |   |   |   |   |   |   |   |--- occupation_ Adm-clerical <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- age <= 39.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- age >  39.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |   |--- occupation_ Adm-clerical >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- hours_per_week <= 35.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |   |--- hours_per_week >  35.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |--- age >  53.50
+|   |   |   |   |   |   |   |   |   |--- workclass_ Local-gov <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- education_num <= 13.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |   |--- education_num >  13.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |   |--- workclass_ Local-gov >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |--- capital_gain >  4243.50
+|   |   |   |   |--- workclass_ Self-emp-not-inc <= 0.50
+|   |   |   |   |   |--- fnlwgt <= 127617.00
+|   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |--- fnlwgt >  127617.00
+|   |   |   |   |   |   |--- marital_status_ Never-married <= 0.50
+|   |   |   |   |   |   |   |--- capital_gain <= 12325.00
+|   |   |   |   |   |   |   |   |--- capital_gain <= 4900.00
+|   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |--- capital_gain >  4900.00
+|   |   |   |   |   |   |   |   |   |--- fnlwgt <= 201525.50
+|   |   |   |   |   |   |   |   |   |   |--- race_ White <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |   |--- race_ White >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- fnlwgt >  201525.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |--- capital_gain >  12325.00
+|   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |--- marital_status_ Never-married >  0.50
+|   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |--- workclass_ Self-emp-not-inc >  0.50
+|   |   |   |   |   |--- fnlwgt <= 26378.00
+|   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |--- fnlwgt >  26378.00
+|   |   |   |   |   |   |--- age <= 57.50
+|   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |--- age >  57.50
+|   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |--- occupation_ Prof-specialty >  0.50
+|   |   |   |--- marital_status_ Married-civ-spouse <= 0.50
+|   |   |   |   |--- marital_status_ Widowed <= 0.50
+|   |   |   |   |   |--- capital_gain <= 4718.50
+|   |   |   |   |   |   |--- marital_status_ Married-spouse-absent <= 0.50
+|   |   |   |   |   |   |   |--- hours_per_week <= 37.50
+|   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |--- hours_per_week >  37.50
+|   |   |   |   |   |   |   |   |--- workclass_ Federal-gov <= 0.50
+|   |   |   |   |   |   |   |   |   |--- hours_per_week <= 53.50
+|   |   |   |   |   |   |   |   |   |   |--- hours_per_week <= 38.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- hours_per_week >  38.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 14
+|   |   |   |   |   |   |   |   |   |--- hours_per_week >  53.50
+|   |   |   |   |   |   |   |   |   |   |--- fnlwgt <= 106690.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |   |--- fnlwgt >  106690.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |--- workclass_ Federal-gov >  0.50
+|   |   |   |   |   |   |   |   |   |--- education_ Bachelors <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- education_num <= 11.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |   |--- education_num >  11.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |   |--- education_ Bachelors >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |--- marital_status_ Married-spouse-absent >  0.50
+|   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |--- capital_gain >  4718.50
+|   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |--- marital_status_ Widowed >  0.50
+|   |   |   |   |   |--- class:  <=50K
+|   |   |   |--- marital_status_ Married-civ-spouse >  0.50
+|   |   |   |   |--- workclass_ Self-emp-inc <= 0.50
+|   |   |   |   |   |--- education_ Masters <= 0.50
+|   |   |   |   |   |   |--- native_country_ Jamaica <= 0.50
+|   |   |   |   |   |   |   |--- fnlwgt <= 40745.50
+|   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |--- fnlwgt >  40745.50
+|   |   |   |   |   |   |   |   |--- workclass_ State-gov <= 0.50
+|   |   |   |   |   |   |   |   |   |--- native_country_ Germany <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- workclass_ Local-gov <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- workclass_ Local-gov >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |--- native_country_ Germany >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |--- workclass_ State-gov >  0.50
+|   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |--- native_country_ Jamaica >  0.50
+|   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |--- education_ Masters >  0.50
+|   |   |   |   |   |   |--- fnlwgt <= 178224.00
+|   |   |   |   |   |   |   |--- capital_gain <= 49999.50
+|   |   |   |   |   |   |   |   |--- age <= 50.50
+|   |   |   |   |   |   |   |   |   |--- workclass_ Local-gov <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |   |--- workclass_ Local-gov >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |--- age >  50.50
+|   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |--- capital_gain >  49999.50
+|   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |--- fnlwgt >  178224.00
+|   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |--- workclass_ Self-emp-inc >  0.50
+|   |   |   |   |   |--- hours_per_week <= 55.00
+|   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |--- hours_per_week >  55.00
+|   |   |   |   |   |   |--- class:  >50K
+|--- sex_ Male >  0.50
+|   |--- education_num <= 12.50
+|   |   |--- occupation_ Exec-managerial <= 0.50
+|   |   |   |--- marital_status_ Never-married <= 0.50
+|   |   |   |   |--- relationship_ Husband <= 0.50
+|   |   |   |   |   |--- occupation_ Adm-clerical <= 0.50
+|   |   |   |   |   |   |--- capital_gain <= 4444.00
+|   |   |   |   |   |   |   |--- fnlwgt <= 102296.50
+|   |   |   |   |   |   |   |   |--- education_ 12th <= 0.50
+|   |   |   |   |   |   |   |   |   |--- relationship_ Not-in-family <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- marital_status_ Widowed <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- marital_status_ Widowed >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- relationship_ Not-in-family >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- capital_loss <= 2067.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- capital_loss >  2067.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |--- education_ 12th >  0.50
+|   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |--- fnlwgt >  102296.50
+|   |   |   |   |   |   |   |   |--- fnlwgt <= 248544.50
+|   |   |   |   |   |   |   |   |   |--- marital_status_ Married-civ-spouse <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- marital_status_ Married-spouse-absent <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- marital_status_ Married-spouse-absent >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |--- marital_status_ Married-civ-spouse >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- fnlwgt <= 162486.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- fnlwgt >  162486.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |--- fnlwgt >  248544.50
+|   |   |   |   |   |   |   |   |   |--- education_num <= 6.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |--- education_num >  6.50
+|   |   |   |   |   |   |   |   |   |   |--- fnlwgt <= 250223.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |   |   |--- fnlwgt >  250223.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |--- capital_gain >  4444.00
+|   |   |   |   |   |   |   |--- relationship_ Not-in-family <= 0.50
+|   |   |   |   |   |   |   |   |--- occupation_ Craft-repair <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |--- occupation_ Craft-repair >  0.50
+|   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |--- relationship_ Not-in-family >  0.50
+|   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |--- occupation_ Adm-clerical >  0.50
+|   |   |   |   |   |   |--- age <= 68.50
+|   |   |   |   |   |   |   |--- capital_loss <= 1129.00
+|   |   |   |   |   |   |   |   |--- race_ White <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |--- race_ White >  0.50
+|   |   |   |   |   |   |   |   |   |--- marital_status_ Married-civ-spouse <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- education_num <= 9.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- education_num >  9.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |--- marital_status_ Married-civ-spouse >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- fnlwgt <= 130459.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |   |--- fnlwgt >  130459.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |--- capital_loss >  1129.00
+|   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |--- age >  68.50
+|   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |--- relationship_ Husband >  0.50
+|   |   |   |   |   |--- native_country_ El-Salvador <= 0.50
+|   |   |   |   |   |   |--- occupation_ Tech-support <= 0.50
+|   |   |   |   |   |   |   |--- capital_gain <= 5095.50
+|   |   |   |   |   |   |   |   |--- capital_loss <= 1794.00
+|   |   |   |   |   |   |   |   |   |--- age <= 35.50
+|   |   |   |   |   |   |   |   |   |   |--- workclass_ Self-emp-inc <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 31
+|   |   |   |   |   |   |   |   |   |   |--- workclass_ Self-emp-inc >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |--- age >  35.50
+|   |   |   |   |   |   |   |   |   |   |--- education_ 9th <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 41
+|   |   |   |   |   |   |   |   |   |   |--- education_ 9th >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |--- capital_loss >  1794.00
+|   |   |   |   |   |   |   |   |   |--- native_country_ England <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- occupation_ Adm-clerical <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 13
+|   |   |   |   |   |   |   |   |   |   |--- occupation_ Adm-clerical >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |--- native_country_ England >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |--- capital_gain >  5095.50
+|   |   |   |   |   |   |   |   |--- fnlwgt <= 355267.00
+|   |   |   |   |   |   |   |   |   |--- workclass_ Self-emp-not-inc <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- workclass_ Federal-gov <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- workclass_ Federal-gov >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |   |--- workclass_ Self-emp-not-inc >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |--- fnlwgt >  355267.00
+|   |   |   |   |   |   |   |   |   |--- workclass_ Private <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |--- workclass_ Private >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |--- occupation_ Tech-support >  0.50
+|   |   |   |   |   |   |   |--- education_num <= 5.00
+|   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |--- education_num >  5.00
+|   |   |   |   |   |   |   |   |--- capital_loss <= 742.50
+|   |   |   |   |   |   |   |   |   |--- fnlwgt <= 145693.00
+|   |   |   |   |   |   |   |   |   |   |--- workclass_ Federal-gov <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- workclass_ Federal-gov >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- fnlwgt >  145693.00
+|   |   |   |   |   |   |   |   |   |   |--- workclass_ State-gov <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 16
+|   |   |   |   |   |   |   |   |   |   |--- workclass_ State-gov >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |--- capital_loss >  742.50
+|   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |--- native_country_ El-Salvador >  0.50
+|   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |--- marital_status_ Never-married >  0.50
+|   |   |   |   |--- capital_loss <= 2105.50
+|   |   |   |   |   |--- relationship_ Not-in-family <= 0.50
+|   |   |   |   |   |   |--- relationship_ Own-child <= 0.50
+|   |   |   |   |   |   |   |--- relationship_ Other-relative <= 0.50
+|   |   |   |   |   |   |   |   |--- capital_gain <= 7641.50
+|   |   |   |   |   |   |   |   |   |--- fnlwgt <= 201822.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |--- fnlwgt >  201822.50
+|   |   |   |   |   |   |   |   |   |   |--- native_country_ United-States <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |   |--- native_country_ United-States >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |--- capital_gain >  7641.50
+|   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |--- relationship_ Other-relative >  0.50
+|   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |--- relationship_ Own-child >  0.50
+|   |   |   |   |   |   |   |--- occupation_ Other-service <= 0.50
+|   |   |   |   |   |   |   |   |--- occupation_ Handlers-cleaners <= 0.50
+|   |   |   |   |   |   |   |   |   |--- hours_per_week <= 46.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |--- hours_per_week >  46.50
+|   |   |   |   |   |   |   |   |   |   |--- education_num <= 9.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- education_num >  9.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |--- occupation_ Handlers-cleaners >  0.50
+|   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |--- occupation_ Other-service >  0.50
+|   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |--- relationship_ Not-in-family >  0.50
+|   |   |   |   |   |   |--- education_ 7th-8th <= 0.50
+|   |   |   |   |   |   |   |--- workclass_ Local-gov <= 0.50
+|   |   |   |   |   |   |   |   |--- occupation_ Handlers-cleaners <= 0.50
+|   |   |   |   |   |   |   |   |   |--- workclass_ Self-emp-inc <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- capital_gain <= 6515.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 15
+|   |   |   |   |   |   |   |   |   |   |--- capital_gain >  6515.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |   |--- workclass_ Self-emp-inc >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- hours_per_week <= 55.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- hours_per_week >  55.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |--- occupation_ Handlers-cleaners >  0.50
+|   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |--- workclass_ Local-gov >  0.50
+|   |   |   |   |   |   |   |   |--- fnlwgt <= 259994.50
+|   |   |   |   |   |   |   |   |   |--- fnlwgt <= 247567.50
+|   |   |   |   |   |   |   |   |   |   |--- occupation_ Adm-clerical <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- occupation_ Adm-clerical >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |--- fnlwgt >  247567.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |--- fnlwgt >  259994.50
+|   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |--- education_ 7th-8th >  0.50
+|   |   |   |   |   |   |   |--- occupation_ Craft-repair <= 0.50
+|   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |--- occupation_ Craft-repair >  0.50
+|   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |--- capital_loss >  2105.50
+|   |   |   |   |   |--- occupation_ Handlers-cleaners <= 0.50
+|   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |--- occupation_ Handlers-cleaners >  0.50
+|   |   |   |   |   |   |--- class:  <=50K
+|   |   |--- occupation_ Exec-managerial >  0.50
+|   |   |   |--- workclass_ Self-emp-not-inc <= 0.50
+|   |   |   |   |--- relationship_ Own-child <= 0.50
+|   |   |   |   |   |--- race_ Asian-Pac-Islander <= 0.50
+|   |   |   |   |   |   |--- hours_per_week <= 49.00
+|   |   |   |   |   |   |   |--- marital_status_ Divorced <= 0.50
+|   |   |   |   |   |   |   |   |--- capital_gain <= 5311.50
+|   |   |   |   |   |   |   |   |   |--- relationship_ Husband <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- race_ White <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |   |--- race_ White >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |--- relationship_ Husband >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- education_ 12th <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 15
+|   |   |   |   |   |   |   |   |   |   |--- education_ 12th >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |--- capital_gain >  5311.50
+|   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |--- marital_status_ Divorced >  0.50
+|   |   |   |   |   |   |   |   |--- education_ Assoc-acdm <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |--- education_ Assoc-acdm >  0.50
+|   |   |   |   |   |   |   |   |   |--- fnlwgt <= 273524.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |--- fnlwgt >  273524.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |--- hours_per_week >  49.00
+|   |   |   |   |   |   |   |--- relationship_ Not-in-family <= 0.50
+|   |   |   |   |   |   |   |   |--- marital_status_ Married-civ-spouse <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |--- marital_status_ Married-civ-spouse >  0.50
+|   |   |   |   |   |   |   |   |   |--- education_ Some-college <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- native_country_ Greece <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- native_country_ Greece >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |--- education_ Some-college >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- workclass_ Local-gov <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 12
+|   |   |   |   |   |   |   |   |   |   |--- workclass_ Local-gov >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |--- relationship_ Not-in-family >  0.50
+|   |   |   |   |   |   |   |   |--- education_ 12th <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |--- education_ 12th >  0.50
+|   |   |   |   |   |   |   |   |   |--- workclass_ Private <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |   |--- workclass_ Private >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |--- race_ Asian-Pac-Islander >  0.50
+|   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |--- relationship_ Own-child >  0.50
+|   |   |   |   |   |--- class:  <=50K
+|   |   |   |--- workclass_ Self-emp-not-inc >  0.50
+|   |   |   |   |--- capital_loss <= 943.50
+|   |   |   |   |   |--- marital_status_ Married-spouse-absent <= 0.50
+|   |   |   |   |   |   |--- hours_per_week <= 33.50
+|   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |--- hours_per_week >  33.50
+|   |   |   |   |   |   |   |--- relationship_ Not-in-family <= 0.50
+|   |   |   |   |   |   |   |   |--- education_ HS-grad <= 0.50
+|   |   |   |   |   |   |   |   |   |--- hours_per_week <= 51.00
+|   |   |   |   |   |   |   |   |   |   |--- race_ Amer-Indian-Eskimo <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |   |   |--- race_ Amer-Indian-Eskimo >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |--- hours_per_week >  51.00
+|   |   |   |   |   |   |   |   |   |   |--- marital_status_ Married-civ-spouse <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |   |   |--- marital_status_ Married-civ-spouse >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |--- education_ HS-grad >  0.50
+|   |   |   |   |   |   |   |   |   |--- race_ White <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- hours_per_week <= 42.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |   |--- hours_per_week >  42.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |--- race_ White >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- capital_gain <= 7512.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- capital_gain >  7512.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |--- relationship_ Not-in-family >  0.50
+|   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |--- marital_status_ Married-spouse-absent >  0.50
+|   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |--- capital_loss >  943.50
+|   |   |   |   |   |--- class:  >50K
+|   |--- education_num >  12.50
+|   |   |--- occupation_ Handlers-cleaners <= 0.50
+|   |   |   |--- relationship_ Husband <= 0.50
+|   |   |   |   |--- education_ Doctorate <= 0.50
+|   |   |   |   |   |--- education_ Masters <= 0.50
+|   |   |   |   |   |   |--- workclass_ Local-gov <= 0.50
+|   |   |   |   |   |   |   |--- capital_gain <= 7139.50
+|   |   |   |   |   |   |   |   |--- education_ Bachelors <= 0.50
+|   |   |   |   |   |   |   |   |   |--- fnlwgt <= 138748.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |   |--- fnlwgt >  138748.50
+|   |   |   |   |   |   |   |   |   |   |--- age <= 35.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |   |--- age >  35.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |--- education_ Bachelors >  0.50
+|   |   |   |   |   |   |   |   |   |--- fnlwgt <= 150622.50
+|   |   |   |   |   |   |   |   |   |   |--- occupation_ Other-service <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |   |   |   |--- occupation_ Other-service >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |--- fnlwgt >  150622.50
+|   |   |   |   |   |   |   |   |   |   |--- relationship_ Not-in-family <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- relationship_ Not-in-family >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |--- capital_gain >  7139.50
+|   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |--- workclass_ Local-gov >  0.50
+|   |   |   |   |   |   |   |--- occupation_ Tech-support <= 0.50
+|   |   |   |   |   |   |   |   |--- occupation_ Exec-managerial <= 0.50
+|   |   |   |   |   |   |   |   |   |--- occupation_ Protective-serv <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |--- occupation_ Protective-serv >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- age <= 47.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |   |--- age >  47.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |--- occupation_ Exec-managerial >  0.50
+|   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |--- occupation_ Tech-support >  0.50
+|   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |--- education_ Masters >  0.50
+|   |   |   |   |   |   |--- workclass_ Federal-gov <= 0.50
+|   |   |   |   |   |   |   |--- marital_status_ Never-married <= 0.50
+|   |   |   |   |   |   |   |   |--- workclass_ Private <= 0.50
+|   |   |   |   |   |   |   |   |   |--- hours_per_week <= 55.00
+|   |   |   |   |   |   |   |   |   |   |--- relationship_ Unmarried <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- relationship_ Unmarried >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |--- hours_per_week >  55.00
+|   |   |   |   |   |   |   |   |   |   |--- marital_status_ Separated <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- marital_status_ Separated >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |--- workclass_ Private >  0.50
+|   |   |   |   |   |   |   |   |   |--- native_country_ Iran <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- marital_status_ Married-civ-spouse <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |   |--- marital_status_ Married-civ-spouse >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |   |--- native_country_ Iran >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |--- marital_status_ Never-married >  0.50
+|   |   |   |   |   |   |   |   |--- relationship_ Not-in-family <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |--- relationship_ Not-in-family >  0.50
+|   |   |   |   |   |   |   |   |   |--- hours_per_week <= 42.50
+|   |   |   |   |   |   |   |   |   |   |--- hours_per_week <= 36.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |   |   |   |   |--- hours_per_week >  36.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |--- hours_per_week >  42.50
+|   |   |   |   |   |   |   |   |   |   |--- occupation_ Prof-specialty <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |   |   |--- occupation_ Prof-specialty >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 3
+|   |   |   |   |   |   |--- workclass_ Federal-gov >  0.50
+|   |   |   |   |   |   |   |--- occupation_ Exec-managerial <= 0.50
+|   |   |   |   |   |   |   |   |--- marital_status_ Divorced <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |--- marital_status_ Divorced >  0.50
+|   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |--- occupation_ Exec-managerial >  0.50
+|   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |--- education_ Doctorate >  0.50
+|   |   |   |   |   |--- hours_per_week <= 62.00
+|   |   |   |   |   |   |--- relationship_ Unmarried <= 0.50
+|   |   |   |   |   |   |   |--- marital_status_ Divorced <= 0.50
+|   |   |   |   |   |   |   |   |--- marital_status_ Never-married <= 0.50
+|   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |--- marital_status_ Never-married >  0.50
+|   |   |   |   |   |   |   |   |   |--- occupation_ Prof-specialty <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |   |--- occupation_ Prof-specialty >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- native_country_ United-States <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |   |--- native_country_ United-States >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |--- marital_status_ Divorced >  0.50
+|   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |--- relationship_ Unmarried >  0.50
+|   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |--- hours_per_week >  62.00
+|   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |--- relationship_ Husband >  0.50
+|   |   |   |   |--- capital_gain <= 5095.50
+|   |   |   |   |   |--- hours_per_week <= 41.50
+|   |   |   |   |   |   |--- capital_loss <= 1813.50
+|   |   |   |   |   |   |   |--- hours_per_week <= 31.50
+|   |   |   |   |   |   |   |   |--- workclass_ Self-emp-not-inc <= 0.50
+|   |   |   |   |   |   |   |   |   |--- age <= 29.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |--- age >  29.50
+|   |   |   |   |   |   |   |   |   |   |--- education_ Bachelors <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 4
+|   |   |   |   |   |   |   |   |   |   |--- education_ Bachelors >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 6
+|   |   |   |   |   |   |   |   |--- workclass_ Self-emp-not-inc >  0.50
+|   |   |   |   |   |   |   |   |   |--- occupation_ Exec-managerial <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- education_ Doctorate <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |   |   |--- education_ Doctorate >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |--- occupation_ Exec-managerial >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |--- hours_per_week >  31.50
+|   |   |   |   |   |   |   |   |--- occupation_ Transport-moving <= 0.50
+|   |   |   |   |   |   |   |   |   |--- age <= 37.50
+|   |   |   |   |   |   |   |   |   |   |--- native_country_ United-States <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 2
+|   |   |   |   |   |   |   |   |   |   |--- native_country_ United-States >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 17
+|   |   |   |   |   |   |   |   |   |--- age >  37.50
+|   |   |   |   |   |   |   |   |   |   |--- race_ White <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 8
+|   |   |   |   |   |   |   |   |   |   |--- race_ White >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 23
+|   |   |   |   |   |   |   |   |--- occupation_ Transport-moving >  0.50
+|   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |--- capital_loss >  1813.50
+|   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |--- hours_per_week >  41.50
+|   |   |   |   |   |   |--- education_num <= 14.50
+|   |   |   |   |   |   |   |--- workclass_ Self-emp-not-inc <= 0.50
+|   |   |   |   |   |   |   |   |--- age <= 33.50
+|   |   |   |   |   |   |   |   |   |--- occupation_ Exec-managerial <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- hours_per_week <= 66.00
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 13
+|   |   |   |   |   |   |   |   |   |   |--- hours_per_week >  66.00
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |   |--- occupation_ Exec-managerial >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- race_ Asian-Pac-Islander <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 10
+|   |   |   |   |   |   |   |   |   |   |--- race_ Asian-Pac-Islander >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |--- age >  33.50
+|   |   |   |   |   |   |   |   |   |--- occupation_ Sales <= 0.50
+|   |   |   |   |   |   |   |   |   |   |--- occupation_ Exec-managerial <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 13
+|   |   |   |   |   |   |   |   |   |   |--- occupation_ Exec-managerial >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 13
+|   |   |   |   |   |   |   |   |   |--- occupation_ Sales >  0.50
+|   |   |   |   |   |   |   |   |   |   |--- workclass_ Self-emp-inc <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 13
+|   |   |   |   |   |   |   |   |   |   |--- workclass_ Self-emp-inc >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 7
+|   |   |   |   |   |   |   |--- workclass_ Self-emp-not-inc >  0.50
+|   |   |   |   |   |   |   |   |--- native_country_ Puerto-Rico <= 0.50
+|   |   |   |   |   |   |   |   |   |--- capital_gain <= 3761.50
+|   |   |   |   |   |   |   |   |   |   |--- occupation_ Prof-specialty <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |   |   |--- occupation_ Prof-specialty >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 5
+|   |   |   |   |   |   |   |   |   |--- capital_gain >  3761.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |--- native_country_ Puerto-Rico >  0.50
+|   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |--- education_num >  14.50
+|   |   |   |   |   |   |   |--- occupation_ Craft-repair <= 0.50
+|   |   |   |   |   |   |   |   |--- native_country_ South <= 0.50
+|   |   |   |   |   |   |   |   |   |--- age <= 33.50
+|   |   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |   |   |--- age >  33.50
+|   |   |   |   |   |   |   |   |   |   |--- workclass_ Private <= 0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- class:  >50K
+|   |   |   |   |   |   |   |   |   |   |--- workclass_ Private >  0.50
+|   |   |   |   |   |   |   |   |   |   |   |--- truncated branch of depth 9
+|   |   |   |   |   |   |   |   |--- native_country_ South >  0.50
+|   |   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |   |   |   |--- occupation_ Craft-repair >  0.50
+|   |   |   |   |   |   |   |   |--- class:  <=50K
+|   |   |   |   |--- capital_gain >  5095.50
+|   |   |   |   |   |--- class:  >50K
+|   |   |--- occupation_ Handlers-cleaners >  0.50
+|   |   |   |--- class:  <=50K

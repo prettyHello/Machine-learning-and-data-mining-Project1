@@ -1,0 +1,22 @@
+|--- marital_status_ Married-civ-spouse <= 0.50
+|   |--- capital_gain <= 7669.50
+|   |   |--- age <= 29.50
+|   |   |   |--- class:  <=50K
+|   |   |--- age >  29.50
+|   |   |   |--- class:  <=50K
+|   |--- capital_gain >  7669.50
+|   |   |--- age <= 20.50
+|   |   |   |--- class:  <=50K
+|   |   |--- age >  20.50
+|   |   |   |--- class:  >50K
+|--- marital_status_ Married-civ-spouse >  0.50
+|   |--- capital_gain <= 5095.50
+|   |   |--- education_num <= 11.50
+|   |   |   |--- class:  <=50K
+|   |   |--- education_num >  11.50
+|   |   |   |--- class:  >50K
+|   |--- capital_gain >  5095.50
+|   |   |--- age <= 60.50
+|   |   |   |--- class:  >50K
+|   |   |--- age >  60.50
+|   |   |   |--- class:  >50K
